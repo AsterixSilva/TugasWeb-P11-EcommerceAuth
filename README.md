@@ -336,7 +336,8 @@ TugasWeb-P11-EcommerceAuth/
 │   └── seeders/
 │
 ├── docs/
-│   └── tinker-queries.md
+│   ├── tinker-queries.md
+│   └── screenshots/
 │
 ├── resources/
 │   └── views/
@@ -367,3 +368,45 @@ TugasWeb-P11-EcommerceAuth/
 - [✔] Route Protection
 - [✔] Incognito Testing
 - [✔] Dokumentasi
+
+## 16. Screenshot
+
+### Dashboard per Role
+
+Dashboard menampilkan badge role, ringkasan produk, produk per kategori, dan produk terbaru untuk semua role yang sudah login.
+
+**Admin (`ROLE: ADMIN`) — Total Produk 50, Stok Tersedia 45, Stok Habis 5:**
+
+![Dashboard Admin](docs/screenshots/admindashboard.jpeg)
+
+**Editor (`ROLE: EDITOR`):**
+
+![Dashboard Editor](docs/screenshots/editordashboard.jpeg)
+
+**User (`ROLE: USER`) — Total Produk 50, Stok Tersedia 45, Stok Habis 5:**
+
+![Dashboard User](docs/screenshots/userdashboard.jpeg)
+
+### Tinker Queries
+
+**Cek jumlah produk, kategori, dan user:**
+
+![Tinker Cek User](docs/screenshots/tinkercekuser.jpeg)
+
+![Tinker Cek Kategori](docs/screenshots/tinkercekkategori.jpeg)
+
+**Lihat 5 produk beserta kategorinya (eager loading):**
+
+![Tinker Cek Produk](docs/screenshots/tinkercekproduk.jpeg)
+
+![Tinker Produk + Kategori](docs/screenshots/tinker.jpeg)
+
+**Cek produk termurah dan termahal:**
+
+![Tinker Termurah & Termahal](docs/screenshots/tinkermahalmurah.jpeg)
+
+### Pengujian Akses
+
+**Akses route yang tidak ada (`/dashboard/admin`) menghasilkan 404:**
+
+![Error Akses](docs/screenshots/erorusertoadmin.jpeg)
